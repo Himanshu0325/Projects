@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.recContainer{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+#rec{
+    height: 250px;
+    width: 500px;
+    border: 1px solid rgb(0, 0, 0);
+    display: flex;
+    
+}

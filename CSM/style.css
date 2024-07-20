@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.nav{
+    background-color: beige;
+    position: fixed;
+    height: 100%;
+    width:16rem;
+    display:inline-block;   
+}
+.main{
+    position: relative;
+}
+.content{
+    position: absolute;
+    left: 16rem;
+    margin-left: 1rem;
+}
+#nav1{
+    text-align: center;  
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;   
+}
+#yt1{
+    float: right;
+}
+#img1{
+    float: right;
+}
+#img2{
+    float: left;
+}
