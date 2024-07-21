@@ -49,4 +49,3 @@ function nextMonth() {
   currentMonth = (currentMonth + 1) % 12;
   showCalendar(currentMonth, currentYear);
 }
- 
