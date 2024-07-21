@@ -5,20 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Planner</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="calender/cal.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+CU:wght@100..400&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="main">
-        <div class="intro">
-
-        </div>
-        <div class="cal_box">
-            <div id="cal"></div>
-            <div id="holiday"></div>
-            <div id="event"></div>
-            <div id="imp_task"></div>
-        </div>
+        <section class="intro">
+             <h1>Task Planner</h1>
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe neque voluptatibus, hic ex nesciunt dolorem deserunt, maxime labore molestiae omnis vero ratione accusamus, nulla et tenetur quis dolor optio magnam.
+             Facilis accusamus possimus pariatur nisi eum sapiente voluptate rerum, qui ipsam! Quisquam, libero quam beatae laudantium, corporis obcaecati voluptate ducimus voluptates, earum necessitatibus nesciunt suscipit accusantium incidunt atque. Hic, earum?
+             Earum explicabo asperiores quidem, nisi voluptates sint architecto dolores omnis accusantium excepturi.</p>
+        </section>
+        <section class="cal">
+            <div class="left_box">
+                <div class="calender">                   
+                    <div class="header">
+                        <button onclick="prevMonth()">&lt;</button>
+                        <h2 id="month-year"></h2>
+                        <button onclick="nextMonth()">&gt;</button>
+                      </div>
+                      <div class="weekdays">
+                        <div>Sun</div>
+                        <div>Mon</div>
+                        <div>Tue</div>
+                        <div>Wed</div>
+                        <div>Thu</div>
+                        <div>Fri</div>
+                        <div>Sat</div>
+                      </div>
+                      <div class="days" id="calendar-days">
+                      </div>
+                </div>
+                <div class="popup"></div>
+            </div>
+            <div class="right_box"></div>
+        </section>
     </div>
 
     <script src="logic.js"> </script>
+    <script src="calender/cal.js"></script>
 </body>
 </html>
