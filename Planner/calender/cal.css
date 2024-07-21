@@ -20,6 +20,10 @@ body {
   justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
+  width: 70%;
+}
+.header h2{
+  font-size: 2em;
 }
 
 .header button {
@@ -34,9 +38,12 @@ body {
 .weekdays {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: #ddd;
   padding: 5px;
   border-radius: 3px;
+  width: 90%;
+  height: 7%;
 }
 
 .weekdays div {
@@ -48,6 +55,8 @@ body {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
   gap: 5px;
+  width: 90%;
+  height: 75%;
 }
 
 .days div {
