@@ -1,6 +1,6 @@
-let today = new Date();
-let currentMonth = today.getMonth();
-let currentYear = today.getFullYear();
+today = new Date()
+currentMonth = today.getMonth();
+currentYear = today.getFullYear();
 
 document.addEventListener("DOMContentLoaded", function() {
   showCalendar(currentMonth, currentYear);
@@ -28,6 +28,10 @@ function showCalendar(month, year) {
     if (day === today.getDate() && year === today.getFullYear() && month === today.getMonth()) {
       dayDiv.classList.add("current-day");
     }
+    dayDiv.addEventListener("click" ,function(){
+        console.log(day)
+        popup ();
+    });
     calendarDays.appendChild(dayDiv);
   }
 }
@@ -48,4 +52,25 @@ function nextMonth() {
   currentYear = (currentMonth === 11) ? currentYear + 1 : currentYear;
   currentMonth = (currentMonth + 1) % 12;
   showCalendar(currentMonth, currentYear);
+}
+
+function popup(){
+  var x = document.getElementById("popup");
+   x.style.cssText = "visibility: visible";
+}
+function remove_popup(){
+  var x = document.getElementById("popup");
+  x.style.cssText = "visibility: hidden";
+  let y =1;
+  y = y+1;
+  task_list();
+}
+function task_list(){
+  let list = document.createElement("li")
+  let holiday = document.getElementById("ts")
+  let input = document.getElementById("input")
+  let task = input.value 
+  list.textContent = task
+  
+  holiday.appendChild(list)
 }
