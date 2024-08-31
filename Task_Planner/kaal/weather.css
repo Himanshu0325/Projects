@@ -1,0 +1,91 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#card{
+    height: 100%;
+    width: 100%;
+    margin: 5px;
+}
+
+#search{
+    display: flex;
+    height: 10%;
+    margin: 5px 10px;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid;
+    border-radius: 5px; */
+}
+#search input{
+    height: 100%;
+    width: 85%;
+    border: 1px solid;
+    border-radius: 5px;
+}
+#search img{
+    height: 100%;
+    width: 15%;
+    border: 0;
+    outline: 0;
+    border-radius: 50%;
+    background-color: white;
+}
+
+#wSection{
+    height:90% ;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 5px;
+}
+
+#mood{
+    height: 30%;
+    /* width: 3%; */
+}
+
+#temp{
+    height: 8%;
+}
+
+.HW{
+    display: flex;
+    height: 40%;
+    width: 100%;
+    justify-content: center;
+    align-self: center;
+}
+#humidity{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#windSpeed{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#humidity img {
+    height: 30%;
+    width: 50%;
+}
+#humidity h1{
+    font-size: 0.9rem;
+}
+#windSpeed img {
+    height: 30%;
+    width: 50%;
+}
+#windSpeed h1{
+    font-size: 0.9rem;
+}

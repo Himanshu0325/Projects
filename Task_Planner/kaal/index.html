@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KAAL</title>
+    <link rel="stylesheet" href="loader.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="task.css">
+    <link rel="stylesheet" href="notes.css">
+    <link rel="stylesheet" href="weather.css">
+
+</head>
+<body >
+    <!-- <div id="loader">
+            <div id="signUp">
+                <div id="formBox">
+                    <form action="">
+                        <label for="userName">Name:</label>
+                        <input id="userName" type="text">
+
+                        <label for="userId">User Id :</label>
+                        <input id="userId" type="text">
+
+                        <label for="emailS">Email Id:</label>
+                        <input id="emailS" type="email">
+
+                        <label for="pass">Password</label>
+                        <input id="pass" type="password">
+
+                        <button onclick="closeLoader()">Submit</button>
+
+                    </form>
+                </div>
+
+            </div>
+    </div> -->
+
+    <div id="MAIN">
+        <nav class="nav">
+           <div>
+            <h1>KAL
+            </h1>
+            <p>Tomorrow never comes</p>
+           </div>
+
+           <div class="navRight">
+            <h1>User_name</h1>
+            <span class="profileImg"><img src="#" alt=""></span>
+           </div>
+        </nav>
+
+        <div class="wrap">
+            <div class="sidebar">
+
+                <div class="weatherConatainer">
+                    <div id="card">
+                      <div id="search">
+                        <input id="cityName" type="text" placeholder="Enter City Name" spellcheck="false" name="x">
+                         <img id="searchBtn" src="./img/search-icon.jpg" alt="">
+                      </div>
+                      
+                      <div id="wSection">
+                        <img id="mood" src="./img/rainny.webp" alt="">
+                        <h1 id="temp">21°C</h1>
+                        <h1 id="city">Nagpur</h1>
+
+                        <div class="HW">
+
+                            <div id="humidity">
+                                <img src="./img/humidity.jpg" alt="">
+                                <p id="humi">20%</p>
+                                <p>Humidity</p>
+                            </div>
+
+                            <div id="windSpeed">
+                                <img src="./img/wind.png" alt="">
+                                <p id="wind">15km/h</p>
+                                <p>Wind Speed</p>
+                            </div>
+
+                        </div>
+
+                      </div>
+
+                    </div>
+                </div>
+
+               <div class="button">
+                    <button onclick="openCal()" class="sideButton" >Calender</button>
+                    <button onclick="openTask()" class="sideButton">Tasks</button>
+                    <button onclick="openNotes()" class="sideButton">Notes</button>
+               </div>
+
+            </div>
+    
+            <div class="homePage center" id="calPage">
+
+                <div id="calheader">
+                    <div id="img" onclick="openTopBar()" ><img src="./img/sidebar-2.png" alt=""></div>
+
+                    <div class="headerBtn">
+                        <button id="navAddButton" onclick="inputTask()"><img src="./img/task.png" alt="">Add Task</button>
+                        <button> <img src="./img/noteimg.jpg" alt="">Add Notes</button>
+                    </div>
+                </div>
+
+                 <div class="cal">
+                    <div class="upper center">
+                        <button onclick="prev()">prev</button>
+                         <span id="monthYear"></span>
+                         <button onclick="next()">next</button>
+                    </div>
+                    <div class="lower center">
+                        <div class="weekDays">
+                           <span>SUN</span>
+                           <span>MON</span>
+                           <span>TUE</span>
+                           <span>WED</span>
+                           <span>THR</span>
+                           <span>FRI</span>
+                           <span>SAT</span>
+                        </div>    
+                        <div class="calDays" id="caldays">
+                        </div>
+
+                        <div class="taskInput" id="taskInput">
+                            <div class="taskInputHeading">
+                                <h1>Add task deatails</h1>
+                                <span id="closeTaskInput">x</span>
+                            </div>
+    
+                            <form style="padding-left: 30px;">
+                                <input id="input" type="text" placeholder="Add title">
+                                <input id="deadline" type="text" placeholder="Deadline">
+                                <textarea id="discription" placeholder="Discription" cols="30" rows="3"></textarea>
+                                <button id="task_add_button" onclick="addToList()">ADD</button>
+                            </form>
+                        </div>
+                    </div>
+                 </div>
+                 <div id="showOption">
+                    <div id="addTask">
+                        <ul style="padding-left : 1rem; ">
+                            <li style="border: 1px solid; border-radius:5px; margin-bottom: 2px; ">Add Task</li>
+                            <li></li>
+                            <li id="seeList" style="border: 1px solid; border-radius:5px; ">See Task list</li>
+                        </ul>
+                    </div>
+                    <div id="closeShowoption" style="padding-right: 8px;">x</div>
+                </div>
+            </div>
+            
+            <div id="taskPage">
+               <div class="task_section" id="task_sections">
+                    <div class="taskNav">
+                        <h1> <img src="./img/task.png" alt=""> Tasks</h1>
+                        <button onclick="taskPageInput()"> <img src="./img/create-note.svg" alt=""> Create</button>
+                    </div>
+                    <div class="taskInput" id="taskPageInput">
+                        <div class="taskInputHeading">
+                            <h1>Add task deatails</h1>
+                            <span id="closeTaskInput">x</span>
+                        </div>
+
+                        <form style="padding-left: 30px;">
+                            <input id="inputTP" type="text" placeholder="Add title">
+                            <input id="deadlineTP" type="text" placeholder="Deadline">
+                            <textarea id="discriptionTP" placeholder="Discription" cols="30" rows="3"></textarea>
+                            <button id="task_add_buttonTP" onclick="addToList()">ADD</button>
+                        </form>
+                    </div>
+                    <div id="taskList">
+                    </div>
+                </div>
+            </div>
+
+            <div id="notesPage">
+                <div class="header">
+                    <h1><img src="./img/noteimg.jpg" >Notes</h1><br><br>
+                    <button onclick="topicPopup()"><img src="./img/create-note.svg" alt="">Create</button>
+                    <button onclick="savedata()"><img src="./img/save.png" alt="" style="height: 45px; width: 45px;">Save your task</button>
+                </div>
+
+                <div id="topicPopup">
+                       <input id="fetchTitle" type="text" placeholder="Enter your topic">
+                       <button onclick="createPage()">Add</button>
+                </div>
+                <div id="renamePopup">
+                    <input id="rename" type="text" placeholder="Enter your title">
+                    <button onclick="change()">Change</button>
+                </div>
+                <div id="optionPopup">
+                    <button id="rename" onclick="rename()">Rename Topic</button>
+                    <button id="saveWork" onclick="saveWork()">Save Work</button>
+                    <button id="Delete" onclick="Delete()">Delete</button>
+                </div>
+
+                <div id="notesContainer" style="height: 75vh;width: 74vw;">
+                    <!-- <div id="renamePopup">
+                        <input id="rename" type="text" placeholder="Enter your title">
+                        <button onclick="change()">Change</button>
+                    </div> -->
+                </div>
+                    
+            </div>
+        </div>
+
+    </div>
+
+    <script src="loader.js"></script>
+    <script src="logic.js"></script>
+    <script src="task.js"></script>
+    <script src="notes.js"></script>
+    <script src="weather.js"></script>
+</body>
+</html>

@@ -1,0 +1,90 @@
+#taskPage{
+    height: 85%;
+    width: 75%;
+    background-color: rgb(255, 255, 255);
+    padding-left: 10px;
+    position: absolute;
+    left: 21%;
+    visibility: hidden;
+}
+
+.taskNav{
+    padding-top: 25px;
+    height: 3rem;
+    width: 100%;
+    display: flex;
+    margin-bottom:1rem ;
+}
+
+.taskNav h1{
+    height: 100%;
+    width: 8rem;
+    display: flex;
+    align-items: center;
+    
+}
+
+.taskNav h1 img{
+    height: 100%;
+}
+
+.taskNav button{
+    height: 100%;
+    width: 9rem;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: none;
+    
+}
+.taskNav button img{
+    height: 100%;
+}
+
+.taskInput{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: #fff;
+    position: absolute;
+    width: 30%;
+    left: 40%;
+    height: 10rem;
+    border: 1px solid;
+    border-radius: 10px;
+    visibility: hidden;
+    cursor: pointer;
+}
+
+.taskInputHeading{
+  display: flex;
+  justify-content:space-between ;
+  width: 79%;
+}
+
+#taskInput form{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;   
+    width: 90%;
+}
+
+#taskinput form input[type=text] {
+    outline: none;
+    border-bottom:1px solid ;
+}
+
+.taskk{
+    border: 1px solid;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    overflow: hidden;
+    margin: .5rem;
+}
+.taskk span{
+    position: relative;
+    left: 95%;
+}

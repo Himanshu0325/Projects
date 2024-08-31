@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: x-large;
+    font-family: 'Times New Roman', Times, serif;
+    overflow: hidden;
+    color: rgb(0, 0, 0);
+}
+
+#loader{
+    padding: 1rem;
+    display: flex;
+}
+
+#signUp{
+    width: 50vw;
+    height: 95vh;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#formBox form{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}

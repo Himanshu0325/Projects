@@ -1,0 +1,149 @@
+#notesPage{
+    height: 85%;
+    width: 75%;
+    background-color: rgb(255, 255, 255);
+    padding-left: 10px;
+    position: absolute;
+    left: 21%;
+    visibility: hidden;
+}
+
+.header{
+    padding-top: 25px;
+    height: 3rem;
+    width: 100%;
+    display: flex;
+}
+
+.header h1{
+    height: 100%;
+    width: 8rem;
+    display: flex;
+    align-items: center;
+    /* border: 1px solid rgb(202, 40, 11);
+    border-radius: 5px; */
+}
+
+.header h1 img{
+    height: 100%;
+}
+
+.header button{
+    height: 100%;
+    width: 9rem;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border: none;
+    
+}
+.header button img{
+    height: 100%;
+}
+
+.pageBox{
+    display: inline-block;
+    border: 1px solid ;
+    border-radius: 1rem;
+    width: 10rem;
+    height: 13rem;
+    cursor: pointer;
+    padding: 0.1rem;
+    margin: .5rem;
+}
+
+.titleBox{
+    display: flex;
+    border-bottom:1px solid ;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#pageTitle{
+    border: none;
+    outline: none;
+    width: 90%;
+}
+.titleBox span{
+    padding: 0 1rem 0 1rem ;
+    visibility: hidden;
+
+}
+.titleBox span :hover{
+    background-color: rgb(213, 213, 213);
+}
+
+#page{
+    display: inline-block;
+    height: 95%;
+    width: 100%;
+}
+
+#topicPopup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem;
+    height: 4.5rem;
+    width: 10rem;
+    border: 1px solid;
+    border-radius: .5rem;
+    gap: .5rem;
+    visibility: hidden;
+    position: absolute;
+}
+#topicPopup input{
+    border: none;
+    border-bottom: 1px solid;
+    width: 100%;
+}
+#topicPopup button{
+    background-color: white;
+    border-radius : 0.5rem; ;
+    width: 5rem;
+}
+
+#renamePopup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70vw;
+    border: 1px solid;
+    border-radius: .5rem;
+    visibility: hidden;
+    position: absolute;
+    right: 1.9rem;
+}
+#renamePopup input{
+    border: none;
+    border-bottom: 1px solid;
+    width: 100%;
+}
+#renamePopup button{
+    background-color: white;
+    border-radius : 0.5rem; ;
+    width: 5rem;
+}
+
+#optionPopup{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem;
+    height: 6rem;
+    width: 10rem;
+    border: 1px solid;
+    border-radius: .5rem;
+    gap: .5rem;
+    position: absolute;
+    top: 5rem;
+    right: 3rem;
+    visibility: hidden;
+}
+#optionPopup button{
+    width: 8rem;
+    background-color: white;
+    border-radius: 0.5rem;
+}
