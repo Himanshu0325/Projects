@@ -1,7 +1,6 @@
 let userImg = document.getElementById("userImg")
 let pcImg = document.getElementById("pcImg")
 let u;
-let p;
 
 function paper(){
   userImg.setAttribute("src","./img/leftH-removebg-preview.png")
