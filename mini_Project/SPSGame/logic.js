@@ -68,4 +68,3 @@ function showResult(finalResult){
 function closePrompt(){
   document.getElementsByClassName("prompt")[0].style.cssText ="visibility : hidden"
 }
-
