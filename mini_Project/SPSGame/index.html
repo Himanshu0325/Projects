@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SPSGame</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="x">
+    <div class="mainBox">
+      <div class="resultBox">
+        <h1 id="showResult"></h1>
+      </div>
+      <div class="gameBox">
+        <div class="userBox">
+          <h1>User's</h1>
+          <div class="gameImg">
+            <img id="userImg"  alt="Sorry">
+          </div>
+        </div>
+        <div class="pcBox">
+          <h1 >Computer</h1>
+          <div class="gameImg">
+            <img id="pcImg"  alt="Sorry">
+          </div>
+        </div>
+      </div>
+      <div class="turnBox">
+        <button onclick="paper()"><img src="./img/leftH-removebg-preview.png" alt=""></button>
+        <button onclick="stone()"><img src="./img/leftS-removebg-preview.png" alt=""></button>
+        <button onclick="scissor()"><img src="./img/leftT-removebg-preview.png" alt=""></button>
+      </div>
+    
+    </div>
+    <!-- <div class="prompt">
+      <h1 id="result"></h1>
+      <button onclick="closePrompt()">OK</button>
+    </div> -->
+  </main>
+
+  <script src="logic.js"></script>
+</body>
+</html>
