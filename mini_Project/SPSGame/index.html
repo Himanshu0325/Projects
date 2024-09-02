@@ -8,23 +8,36 @@
 </head>
 <body>
   <main id="x">
+    <div class="heading">
+      <h1>Stone paper Scissor Game</h1>
+    </div>
     <div class="mainBox">
       <div class="resultBox">
         <h1 id="showResult"></h1>
+        <button onclick="showScoreBox()">Score</button>
+      </div>
+      <div class="scoreBox">
+        <h1 id="win"></h1>
+        <h1 id="Draw"></h1>
+        <h1 id="Defeat"></h1>
+        <button onclick="closeScorebox()">Close</button>
       </div>
       <div class="gameBox">
         <div class="userBox">
           <h1>User's</h1>
           <div class="gameImg">
-            <img id="userImg"  alt="Sorry">
+            <img id="userImg"  alt="">
           </div>
         </div>
         <div class="pcBox">
-          <h1 >Computer</h1>
+          <h1 >Robo</h1>
           <div class="gameImg">
-            <img id="pcImg"  alt="Sorry">
+            <img id="pcImg"  alt="">
           </div>
         </div>
+      </div>
+      <div class="" style="height: 3rem;">
+        <h1>Select your Move Here :</h1>
       </div>
       <div class="turnBox">
         <button onclick="paper()"><img src="./img/leftH-removebg-preview.png" alt=""></button>

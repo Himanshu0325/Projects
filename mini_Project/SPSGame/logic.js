@@ -14,8 +14,7 @@ function paper(){
   pcBrain()
   finalResult = result(r)
   showResult(finalResult)
-  console.log(score);
-  
+  document.getElementsByClassName("resultBox")[0].style.visibility = "visible"
 }
 
 function stone(){
@@ -24,6 +23,7 @@ function stone(){
   pcBrain()
   finalResult = result(r)
   showResult(finalResult);
+  document.getElementsByClassName("resultBox")[0].style.visibility = "visible"
 }
 
 function scissor(){
@@ -32,6 +32,7 @@ function scissor(){
   pcBrain()
   finalResult = result(r)
   showResult(finalResult)
+  document.getElementsByClassName("resultBox")[0].style.visibility = "visible"
 }
 
 function pcBrain(){
@@ -78,4 +79,15 @@ function showResult(finalResult){
 
 function closePrompt(){
   document.getElementsByClassName("prompt")[0].style.cssText ="visibility : hidden"
+}
+
+function showScoreBox(){
+  document.querySelector("#win").innerHTML =`Won : ${score.Won}`
+  document.querySelector("#Defeat").innerHTML = `Defeat : ${score.Defeat}`
+  document.querySelector("#Draw").innerHTML = `Draw : ${score.Draw}`
+  document.querySelector(".scoreBox").style.visibility = "visible"
+}
+
+function closeScorebox(){
+  document.querySelector(".scoreBox").style.visibility = "hidden"
 }
