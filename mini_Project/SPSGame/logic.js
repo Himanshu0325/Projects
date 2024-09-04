@@ -91,3 +91,10 @@ function showScoreBox(){
 function closeScorebox(){
   document.querySelector(".scoreBox").style.visibility = "hidden"
 }
+
+function resetScore(){
+  score.Won = 0
+  score.Draw = 0
+  score.Defeat = 0
+  showScoreBox()
+}
